@@ -65,11 +65,11 @@ enum TomlTypes {
     String(String),
     // Just a regular integer, that can fit in 64 bits
     // Note that the toml spec specifies that all numbers are represented as `i64`s.
-    Integer(u64),
+    Integer(i64),
     // Simple boolean flag
     Bool(bool),
     // Array of regular integers
-    ArrayNum(Vec<u64>),
+    ArrayNum(Vec<i64>),
     // Array of hexadecimal integers
     ArrayString(Vec<String>),
     // Array of booleans
